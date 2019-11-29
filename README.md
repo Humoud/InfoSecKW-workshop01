@@ -1,5 +1,5 @@
 # InfoSecKW-workshop01
-collection on tools used and some notes
+collection of tools used and some notes
 
 
 ### SysInternals PSExec
@@ -26,6 +26,11 @@ creds
 
 ### Crack Map Exec:
 https://github.com/byt3bl33d3r/CrackMapExec
+```bash
+crackmapexec smb IP
+crackmapexec IP -u USERNAME -p PASSWORD -x CMD_COMMAND
+crackmapexec IP -u USERNAME -p PASSWORD -X PowerShell_COMMAND
+```
 
 ### Powershell: Turn Off Defender Real Time Protection
 ```powershell
@@ -35,6 +40,11 @@ https://github.com/byt3bl33d3r/CrackMapExec
 ### Powershell: Turn On Defender Real Time Protection
 ```powershell
  Set-MpPreference -DisableRealtimeMonitoring 0
+```
+
+### CMD: Turn On Windows Firewall
+```powershell
+ netsh advfirewall set allprofiles state off
 ```
 
 ### CMD: Turn off defender(requires a reboot to take affect):
@@ -50,4 +60,5 @@ Invoke-SocksProxy -bindPort 1080
 ```
 
 ### Center for Internet Security, hardening:
+https://www.cyber.gov.au/ism/guidelines-system-hardening
 https://www.cisecurity.org/cis-benchmarks/
