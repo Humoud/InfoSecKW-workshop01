@@ -37,6 +37,10 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v Dis
 
 ### Powershell Socks Proxy:
 https://github.com/p3nt4/Invoke-SocksProxy
+```
+Import-Module .\Invoke-SocksProxy.psm1
+Invoke-SocksProxy -bindPort 1080
+```
 
 ### Center for Internet Security, hardening:
 https://www.cisecurity.org/cis-benchmarks/
