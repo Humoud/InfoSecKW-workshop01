@@ -25,6 +25,11 @@ https://github.com/byt3bl33d3r/CrackMapExec
  Set-MpPreference -DisableRealtimeMonitoring 1
 ```
 
+### Powershell: Turn On Defender Real Time Protection
+```powershell
+ Set-MpPreference -DisableRealtimeMonitoring 0
+```
+
 ### CMD: Turn off defender(requires a reboot to take affect):
 ```powershell
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
