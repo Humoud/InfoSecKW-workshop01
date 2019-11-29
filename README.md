@@ -4,10 +4,10 @@ collection of tools used and some notes
 
 ### SysInternals PSExec
 https://docs.microsoft.com/en-us/sysinternals/downloads/psexec
-
+```batch
 PsExec64.exe \\IP -u username -p password cmd
 PsExec64.exe \\IP -s -u username -p password cmd
-
+```
 ### Metasploit Commands/Modules
 SMB Login:
 ```
