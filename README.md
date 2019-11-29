@@ -1,6 +1,13 @@
 # InfoSecKW-workshop01
 collection on tools used and some notes
 
+
+### SysInternals PSExec
+https://docs.microsoft.com/en-us/sysinternals/downloads/psexec
+
+PsExec64.exe \\IP -u username -p password cmd
+PsExec64.exe \\IP -s -u username -p password cmd
+
 ### Metasploit Commands/Modules
 SMB Login:
 ```
@@ -37,7 +44,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v Dis
 
 ### Powershell Socks Proxy:
 https://github.com/p3nt4/Invoke-SocksProxy
-```
+```powershell
 Import-Module .\Invoke-SocksProxy.psm1
 Invoke-SocksProxy -bindPort 1080
 ```
